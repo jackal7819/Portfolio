@@ -37,11 +37,21 @@ const Navbar = () => {
                         ? 'hidden'
                         : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
                 }>
-                <li className='py-6 text-4xl hover:underline underline-offset-8'>Home</li>
-                <li className='py-6 text-4xl hover:underline underline-offset-8'>About</li>
-                <li className='py-6 text-4xl hover:underline underline-offset-8'>Skills</li>
-                <li className='py-6 text-4xl hover:underline underline-offset-8'>Work</li>
-                <li className='py-6 text-4xl hover:underline underline-offset-8'>Contact</li>
+                <li className='py-6 text-4xl hover:underline underline-offset-8'>
+                    Home
+                </li>
+                <li className='py-6 text-4xl hover:underline underline-offset-8'>
+                    About
+                </li>
+                <li className='py-6 text-4xl hover:underline underline-offset-8'>
+                    Skills
+                </li>
+                <li className='py-6 text-4xl hover:underline underline-offset-8'>
+                    Work
+                </li>
+                <li className='py-6 text-4xl hover:underline underline-offset-8'>
+                    Contact
+                </li>
             </ul>
 
             {/* Social icons */}

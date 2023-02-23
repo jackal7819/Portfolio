@@ -1,13 +1,15 @@
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+import About from './components/About';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
 
 const App = () => {
     return (
-		<div>
-			<Navbar />
-			<Home />
-		</div>
-      )
-    }
+        <div>
+            <Navbar />
+            <Home />
+            <About />
+        </div>
+    );
+};
 
 export default App;
