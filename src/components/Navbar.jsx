@@ -3,24 +3,45 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import Logo from '../assets/logo.png';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10'>
             <div>
                 <img src={Logo} alt='Logo' className='w-[80px] rounded-xl' />
             </div>
 
             {/* menu */}
             <ul className='hidden md:flex'>
-                <li className='hover:underline underline-offset-4'>Home</li>
-                <li className='hover:underline underline-offset-4'>About</li>
-                <li className='hover:underline underline-offset-4'>Skills</li>
-                <li className='hover:underline underline-offset-4'>Work</li>
-                <li className='hover:underline underline-offset-4'>Contact</li>
+                <li className='hover:underline underline-offset-4'>
+                    <Link to='home' smooth={true} duration={500}>
+                        Home
+                    </Link>
+                </li>
+                <li className='hover:underline underline-offset-4'>
+                    <Link to='about' smooth={true} duration={500}>
+                        About
+                    </Link>
+                </li>
+                <li className='hover:underline underline-offset-4'>
+                    <Link to='skills' smooth={true} duration={500}>
+                        Skills
+                    </Link>
+                </li>
+                <li className='hover:underline underline-offset-4'>
+                    <Link to='work' smooth={true} duration={500}>
+                        Work
+                    </Link>
+                </li>
+                <li className='hover:underline underline-offset-4'>
+                    <Link to='contact' smooth={true} duration={500}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             {/* Hamburger */}
@@ -38,19 +59,29 @@ const Navbar = () => {
                         : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
                 }>
                 <li className='py-6 text-4xl hover:underline underline-offset-8'>
-                    Home
+                    <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+                        Home
+                    </Link>
                 </li>
                 <li className='py-6 text-4xl hover:underline underline-offset-8'>
-                    About
+                    <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+                        About
+                    </Link>
                 </li>
                 <li className='py-6 text-4xl hover:underline underline-offset-8'>
-                    Skills
+                    <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+                        Skills
+                    </Link>
                 </li>
                 <li className='py-6 text-4xl hover:underline underline-offset-8'>
-                    Work
+                    <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+                        Work
+                    </Link>
                 </li>
                 <li className='py-6 text-4xl hover:underline underline-offset-8'>
-                    Contact
+                    <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+                        Contact
+                    </Link>
                 </li>
             </ul>
 

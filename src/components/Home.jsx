@@ -1,8 +1,9 @@
 import { TbArrowRightCircle } from 'react-icons/tb';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
-        <div name='home' className='w-full h-screen bg-[#0a192f]'>
+        <div name='home' className='w-full h-screen '>
             {/* Container */}
             <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
                 <p className='text-pink-600'>Hi, my name is</p>
@@ -19,12 +20,20 @@ const Home = () => {
                     assisting in the timely completion of projects.
                 </p>
                 <div>
-                    <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
-                        View Work{' '}
-                        <span className='group-hover:rotate-90 duration-300'>
-                            <TbArrowRightCircle size={20} className='ml-3' />
-                        </span>
-                    </button>
+                    <Link
+                        to='work'
+                        smooth={true}
+                        duration={500}>
+                        <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+                            View Work
+                            <span className='group-hover:rotate-90 duration-300'>
+                                <TbArrowRightCircle
+                                    size={20}
+                                    className='ml-3'
+                                />
+                            </span>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>

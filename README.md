@@ -1,5 +1,7 @@
 # Portfolio
 
+This is my portfolio. It includes the following works - Golden Sand, Golden Burger, DeFi, Colors, Tocha, Build. Includes technology - React js, Javascript, HTML, CSS, Tailwind, SCSS, Git.   
+
 ## Available Scripts
 
 In the project directory, you can run:
