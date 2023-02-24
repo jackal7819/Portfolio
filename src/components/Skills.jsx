@@ -34,7 +34,7 @@ const Skills = () => {
                         <img
                             className='w-20 mx-auto'
                             src={Javascript}
-                            alt='HTML icon'
+                            alt='Javascript icon'
                         />
                         <p className='my-4'>JAVASCRIPT</p>
                     </div>
@@ -42,7 +42,7 @@ const Skills = () => {
                         <img
                             className='w-20 mx-auto'
                             src={ReactImg}
-                            alt='HTML icon'
+                            alt='React icon'
                         />
                         <p className='my-4'>REACT</p>
                     </div>
@@ -50,7 +50,7 @@ const Skills = () => {
                         <img
                             className='w-20 mx-auto'
                             src={Git}
-                            alt='HTML icon'
+                            alt='Git icon'
                         />
                         <p className='my-4'>GIT</p>
                     </div>
@@ -58,7 +58,7 @@ const Skills = () => {
                         <img
                             className='w-20 mx-auto'
                             src={CSS}
-                            alt='HTML icon'
+                            alt='CSS icon'
                         />
                         <p className='my-4'>CSS</p>
                     </div>
@@ -66,7 +66,7 @@ const Skills = () => {
                         <img
                             className='w-20 mx-auto'
                             src={Sass}
-                            alt='HTML icon'
+                            alt='Sass icon'
                         />
                         <p className='my-4'>SASS</p>
                     </div>
@@ -74,7 +74,7 @@ const Skills = () => {
                         <img
                             className='w-20 mx-auto'
                             src={Tailwind}
-                            alt='HTML icon'
+                            alt='Tailwind icon'
                         />
                         <p className='my-4'>TAILWIND</p>
                     </div>
@@ -82,7 +82,7 @@ const Skills = () => {
                         <img
                             className='w-20 mx-auto'
                             src={Bootstrap}
-                            alt='HTML icon'
+                            alt='Bootstrap icon'
                         />
                         <p className='my-4'>BOOTSTRAP</p>
                     </div>
